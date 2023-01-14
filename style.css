@@ -9,4 +9,53 @@
 body{
     font-family: 'Karla', sans-serif;
     min-height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+}
+
+main{
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 50vw;
+    height: 70vh;
+    box-shadow: -5px 5px 15px 8px hsl(203, 21%, 88%);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 45% 55%;
+    grid-template-areas: 
+    "header header"
+    "left right";
+}
+
+.header-card{
+    grid-area: header;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.right-side{
+    grid-area: right;
+    background-color:hsl(179, 54%, 55%);
+    border-bottom-right-radius: 10px;
+}
+
+.left-side{
+    grid-area: left;
+    background-color:  hsl(179, 62%, 43%);
+    border-bottom-left-radius: 10px;
+}
+
+footer{
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
